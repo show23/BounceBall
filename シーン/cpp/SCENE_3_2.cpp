@@ -1,0 +1,158 @@
+
+
+//ヘッダー定義
+#include "TEST_SCENE.h"
+#include "main.h"
+#include "input.h"
+#include "sound.h"
+#include "Background.h"
+#include "Scroll.h"
+
+#include "Player.h"
+#include "Ball.h"
+
+/*--------------------------------------
+    追加ヘッダー定義(忘れないでね)
+ -------------------------------------*/
+#include "Wall.h"
+#include "BreakableWall.h"
+#include "Slowboundwall.h"
+#include "SlowField.h"
+#include "Bumper.h"
+#include "Wind.h"
+#include "WarpBox.h"
+#include "SwitchWall.h"
+#include "AccelerationBlock.h"
+#include "enemy.h"
+#include "Goal.h"
+#include "timer.h"
+
+
+void SetSCENE_3_2() {
+    AddTimer(100);   
+    ////プレイヤー召喚
+    setPlayer(D3DXVECTOR2(150, 500), D3DXVECTOR2(0, 0));
+    ////ボール
+    setBall(D3DXVECTOR2(200, 500), D3DXVECTOR2(0, 0));
+
+    //基本ブロック
+    setWall(D3DXVECTOR2(0, 669), D3DXVECTOR2(7287, 60), 0);
+    setWall(D3DXVECTOR2(0, 0), D3DXVECTOR2(7287, 60), 0);
+    setWall(D3DXVECTOR2(0, 0), D3DXVECTOR2(60, 720), 0);
+    setWall(D3DXVECTOR2(7227, 0), D3DXVECTOR2(60, 720), 0);
+
+
+    setWall(D3DXVECTOR2(1000, 60), D3DXVECTOR2(200, 410), 0);
+
+    setSwitchWall(D3DXVECTOR2(800, 60), D3DXVECTOR2(100, 100), D3DXVECTOR2(1000, 470), D3DXVECTOR2(200, 200));
+
+    //-----------------------------------
+
+    setEnemy_B(D3DXVECTOR2(1350, 150), D3DXVECTOR2(128, 128), D3DXVECTOR2(0, 4), 80, 60);
+
+    setWall(D3DXVECTOR2(1500, 450), D3DXVECTOR2(300, 100), 0);
+    setWall(D3DXVECTOR2(1600, 300), D3DXVECTOR2(400, 150), 0);
+
+    setWall_B(D3DXVECTOR2(1525, 550), D3DXVECTOR2(120, 120), 0);
+    setWall_B(D3DXVECTOR2(1645, 550), D3DXVECTOR2(120, 120), 0);
+
+    setWall_B(D3DXVECTOR2(1600, 60), D3DXVECTOR2(120, 120), 0);
+    setWall_B(D3DXVECTOR2(1600, 180), D3DXVECTOR2(120, 120), 0);
+    setWall_B(D3DXVECTOR2(1720, 60), D3DXVECTOR2(120, 120), 0);
+    setWall_B(D3DXVECTOR2(1720, 180), D3DXVECTOR2(120, 120), 0);
+    setWall_B(D3DXVECTOR2(1840, 60), D3DXVECTOR2(120, 120), 0);
+    setWall_B(D3DXVECTOR2(1840, 180), D3DXVECTOR2(120, 120), 0);
+
+    setSlowfield(D3DXVECTOR2(2000, 300), D3DXVECTOR2(200, 150), 0.1);
+
+    setWall(D3DXVECTOR2(2200, 200), D3DXVECTOR2(300, 470), 0);
+
+    setSwitchWall(D3DXVECTOR2(1850, 450), D3DXVECTOR2(100, 100), D3DXVECTOR2(2200, 60), D3DXVECTOR2(140, 140));
+
+    //-----------------------------------
+
+    setEnemy_B(D3DXVECTOR2(2575, 400), D3DXVECTOR2(128, 128), D3DXVECTOR2(0, 2), 80, 60);
+
+    setSwitchWall(D3DXVECTOR2(3000, 60), D3DXVECTOR2(150, 150), D3DXVECTOR2(2500, 200), D3DXVECTOR2(140, 140));
+    setWall(D3DXVECTOR2(2640, 200), D3DXVECTOR2(660, 340), 0);
+
+    setWall_B(D3DXVECTOR2(2640, 60), D3DXVECTOR2(140, 140), 0);
+    setWall_B(D3DXVECTOR2(2790, 60), D3DXVECTOR2(140, 140), 0);
+
+    setWall_B(D3DXVECTOR2(2700, 540), D3DXVECTOR2(130, 130), 0);
+    setWall_B(D3DXVECTOR2(2830, 540), D3DXVECTOR2(130, 130), 0);
+    setWall_B(D3DXVECTOR2(2960, 540), D3DXVECTOR2(130, 130), 0);
+    setWall_B(D3DXVECTOR2(3090, 540), D3DXVECTOR2(130, 130), 0);
+    setWall_B(D3DXVECTOR2(3220, 540), D3DXVECTOR2(130, 130), 0);
+    setWall_B(D3DXVECTOR2(3350, 540), D3DXVECTOR2(130, 130), 0);
+    setWall_B(D3DXVECTOR2(3480, 540), D3DXVECTOR2(130, 130), 0);
+    setWall_B(D3DXVECTOR2(3610, 540), D3DXVECTOR2(130, 130), 0);
+    setWall_B(D3DXVECTOR2(3740, 540), D3DXVECTOR2(130, 130), 0);
+    setWall_B(D3DXVECTOR2(3870, 540), D3DXVECTOR2(130, 130), 0);
+
+    setWall(D3DXVECTOR2(3300, 60), D3DXVECTOR2(300, 480), 0);
+
+
+    //-----------------------------------
+
+    setWall(D3DXVECTOR2(3800, 180), D3DXVECTOR2(800, 120), 0);
+
+    setWall_B(D3DXVECTOR2(3850, 60), D3DXVECTOR2(120, 120), 0);
+    setWall_B(D3DXVECTOR2(3970, 60), D3DXVECTOR2(120, 120), 0);
+    setWall_B(D3DXVECTOR2(4090, 60), D3DXVECTOR2(120, 120), 0);
+    setWall_B(D3DXVECTOR2(4210, 60), D3DXVECTOR2(120, 120), 0);
+    setWall_B(D3DXVECTOR2(4330, 60), D3DXVECTOR2(120, 120), 0);
+    setWall_B(D3DXVECTOR2(4450, 60), D3DXVECTOR2(120, 120), 0);
+
+    setEnemy_B(D3DXVECTOR2(4450, 350), D3DXVECTOR2(128, 128), D3DXVECTOR2(0, 3), 80, 60);
+    setEnemy_B(D3DXVECTOR2(4800, 150), D3DXVECTOR2(128, 128), D3DXVECTOR2(0, 4), 80, 60);
+    setEnemy_B(D3DXVECTOR2(5000, 150), D3DXVECTOR2(128, 128), D3DXVECTOR2(0, 4), 80, 60);
+    setEnemy_B(D3DXVECTOR2(5350, 150), D3DXVECTOR2(128, 128), D3DXVECTOR2(0, 4), 80, 60);
+
+    setSlowfield(D3DXVECTOR2(3600, 300), D3DXVECTOR2(100, 120), 0.1);
+
+    setSlowfield(D3DXVECTOR2(3800, 420), D3DXVECTOR2(100, 120), 0.1);
+
+    setWall(D3DXVECTOR2(3600, 420), D3DXVECTOR2(200, 120), 0);
+    setWall(D3DXVECTOR2(3900, 420), D3DXVECTOR2(300, 120), 0);
+    setSlowboundwall(D3DXVECTOR2(4200, 420), D3DXVECTOR2(100, 120), 0.1f);
+
+    setWall(D3DXVECTOR2(4600, 180), D3DXVECTOR2(100, 490), 0);
+
+    //------------------------------------
+
+    setWall(D3DXVECTOR2(5100, 60), D3DXVECTOR2(120, 240), 0);
+
+    setWall_B(D3DXVECTOR2(5100, 300), D3DXVECTOR2(120, 120), 0);
+    setWall_B(D3DXVECTOR2(5100, 420), D3DXVECTOR2(120, 130), 0);
+
+    setWall(D3DXVECTOR2(5100, 550), D3DXVECTOR2(120, 120), 0);
+
+    setWall(D3DXVECTOR2(5500, 60), D3DXVECTOR2(120, 240), 0);
+
+    setWall_B(D3DXVECTOR2(5500, 300), D3DXVECTOR2(120, 130), 0);
+
+    setWall(D3DXVECTOR2(5500, 430), D3DXVECTOR2(120, 240), 0);
+
+    setEnemy_B(D3DXVECTOR2(5700, 150), D3DXVECTOR2(128, 128), D3DXVECTOR2(0, 4), 80, 60);
+
+    setEnemy_B(D3DXVECTOR2(5900, 150), D3DXVECTOR2(128, 128), D3DXVECTOR2(0, 4), 80, 60);
+
+    setWall(D3DXVECTOR2(6000, 60), D3DXVECTOR2(120, 120), 0);
+    setSlowboundwall(D3DXVECTOR2(6000, 180), D3DXVECTOR2(120, 120), 0.1f);
+
+    setWall_B(D3DXVECTOR2(6000, 300), D3DXVECTOR2(120, 130), 0);
+
+    setSlowboundwall(D3DXVECTOR2(6000, 430), D3DXVECTOR2(120, 120), 0.1f);
+    setWall(D3DXVECTOR2(6000, 550), D3DXVECTOR2(120, 120), 0);
+
+
+    setEnemy_B(D3DXVECTOR2(6500, 550), D3DXVECTOR2(128, 128), D3DXVECTOR2(0, -4), 20, 120);
+    setEnemy_B(D3DXVECTOR2(6980, 100), D3DXVECTOR2(128, 128), D3DXVECTOR2(0, 4), 20, 120);
+    setEnemy_B(D3DXVECTOR2(6500, 100), D3DXVECTOR2(128, 128), D3DXVECTOR2(4, 0), 20, 120);
+    setEnemy_B(D3DXVECTOR2(6980, 100), D3DXVECTOR2(128, 128), D3DXVECTOR2(-4, 0), 20, 120);
+    setGoal(D3DXVECTOR2(6800, 580), D3DXVECTOR2(150, 128), 1);
+
+    setSlowfield(D3DXVECTOR2(1600, 53), D3DXVECTOR2(300, 247),0.1f);
+
+}

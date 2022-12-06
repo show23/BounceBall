@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\システム系">
+      <UniqueIdentifier>{ce4e5787-f6da-4457-9ba5-210018defe5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ギミック">
+      <UniqueIdentifier>{739b39b5-1eb5-413d-9b35-083ba35386ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\ギミック">
+      <UniqueIdentifier>{861fa20b-dc1c-4d2e-9ad8-7db9abeb0514}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\システム系">
+      <UniqueIdentifier>{8c793b51-3e71-4a98-9d4f-09ad73f0af68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\エネミー">
+      <UniqueIdentifier>{d5fe3d9b-3c65-4d51-b60a-336ac05e4b1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\エネミー">
+      <UniqueIdentifier>{df291d63-a2f3-4b4e-a4cb-1e75caa3c6e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\シーン">
+      <UniqueIdentifier>{4b78f0c8-9bf4-4e1b-92c4-d1bdf289fcb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\シーン">
+      <UniqueIdentifier>{1c88355b-151c-4dd8-8112-19a16737ee66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\シーン\World2">
+      <UniqueIdentifier>{73f9f202-c62a-44d2-960a-94dfa2f59e04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\シーン\World3">
+      <UniqueIdentifier>{47af4d9f-2263-4bfc-b1dd-329229775c93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\シーン\World3">
+      <UniqueIdentifier>{3e0372db-4dde-47f7-a92d-6d3bcb2e3101}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\シーン\World1">
+      <UniqueIdentifier>{a31edab1-6e5d-4908-a750-5c9684a983e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\シーン\World1">
+      <UniqueIdentifier>{8094ec9f-07b1-4a61-8954-e97ec3a87d7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\シーン\World2">
+      <UniqueIdentifier>{97e32917-f8a2-4b66-a667-795c470e61a8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Player.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ギミック\cpp\Bumper.cpp">
+      <Filter>ソース ファイル\ギミック</Filter>
+    </ClCompile>
+    <ClCompile Include="ギミック\cpp\Wall.cpp">
+      <Filter>ソース ファイル\ギミック</Filter>
+    </ClCompile>
+    <ClCompile Include="ギミック\cpp\BreakableWall.cpp">
+      <Filter>ソース ファイル\ギミック</Filter>
+    </ClCompile>
+    <ClCompile Include="ギミック\cpp\Slowboundwall.cpp">
+      <Filter>ソース ファイル\ギミック</Filter>
+    </ClCompile>
+    <ClCompile Include="ギミック\cpp\SlowField.cpp">
+      <Filter>ソース ファイル\ギミック</Filter>
+    </ClCompile>
+    <ClCompile Include="ギミック\cpp\SwitchWall.cpp">
+      <Filter>ソース ファイル\ギミック</Filter>
+    </ClCompile>
+    <ClCompile Include="ギミック\cpp\WarpBox.cpp">
+      <Filter>ソース ファイル\ギミック</Filter>
+    </ClCompile>
+    <ClCompile Include="ギミック\cpp\Wind.cpp">
+      <Filter>ソース ファイル\ギミック</Filter>
+    </ClCompile>
+    <ClCompile Include="Ball.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ギミック\cpp\AccelerationBlock.cpp">
+      <Filter>ソース ファイル\ギミック</Filter>
+    </ClCompile>
+    <ClCompile Include="エネミー\cpp\bullet.cpp">
+      <Filter>ソース ファイル\エネミー</Filter>
+    </ClCompile>
+    <ClCompile Include="エネミー\cpp\enemy.cpp">
+      <Filter>ソース ファイル\エネミー</Filter>
+    </ClCompile>
+    <ClCompile Include="ギミック\cpp\Goal.cpp">
+      <Filter>ソース ファイル\ギミック</Filter>
+    </ClCompile>
+    <ClCompile Include="シーン\cpp\TEST_SCENE.cpp">
+      <Filter>ソース ファイル\シーン</Filter>
+    </ClCompile>
+    <ClCompile Include="シーン\cpp\SCENE_3_1.cpp">
+      <Filter>ソース ファイル\シーン\World3</Filter>
+    </ClCompile>
+    <ClCompile Include="シーン\cpp\SCENE_3_2.cpp">
+      <Filter>ソース ファイル\シーン\World3</Filter>
+    </ClCompile>
+    <ClCompile Include="シーン\cpp\SCENE_3_3.cpp">
+      <Filter>ソース ファイル\シーン\World3</Filter>
+    </ClCompile>
+    <ClCompile Include="シーン\cpp\SCENE_3_4.cpp">
+      <Filter>ソース ファイル\シーン\World3</Filter>
+    </ClCompile>
+    <ClCompile Include="シーン\cpp\SCENE_2_3.cpp">
+      <Filter>ソース ファイル\シーン\World2</Filter>
+    </ClCompile>
+    <ClCompile Include="シーン\cpp\SCENE_2_4.cpp">
+      <Filter>ソース ファイル\シーン\World2</Filter>
+    </ClCompile>
+    <ClCompile Include="シーン\cpp\SCENE_2_1.cpp">
+      <Filter>ソース ファイル\シーン\World2</Filter>
+    </ClCompile>
+    <ClCompile Include="シーン\cpp\SCENE_2_2.cpp">
+      <Filter>ソース ファイル\シーン\World2</Filter>
+    </ClCompile>
+    <ClCompile Include="シーン\cpp\SCENE_1_2.cpp">
+      <Filter>ソース ファイル\シーン\World1</Filter>
+    </ClCompile>
+    <ClCompile Include="シーン\cpp\SCENE_1_3.cpp">
+      <Filter>ソース ファイル\シーン\World1</Filter>
+    </ClCompile>
+    <ClCompile Include="シーン\cpp\SCENE_1_4.cpp">
+      <Filter>ソース ファイル\シーン\World1</Filter>
+    </ClCompile>
+    <ClCompile Include="シーン\cpp\SCENE_1_1.cpp">
+      <Filter>ソース ファイル\シーン\World1</Filter>
+    </ClCompile>
+    <ClCompile Include="システム系\cpp\fade.cpp">
+      <Filter>ソース ファイル\システム系</Filter>
+    </ClCompile>
+    <ClCompile Include="システム系\cpp\GameOver.cpp">
+      <Filter>ソース ファイル\システム系</Filter>
+    </ClCompile>
+    <ClCompile Include="システム系\cpp\input.cpp">
+      <Filter>ソース ファイル\システム系</Filter>
+    </ClCompile>
+    <ClCompile Include="システム系\cpp\renderer.cpp">
+      <Filter>ソース ファイル\システム系</Filter>
+    </ClCompile>
+    <ClCompile Include="システム系\cpp\result.cpp">
+      <Filter>ソース ファイル\システム系</Filter>
+    </ClCompile>
+    <ClCompile Include="システム系\cpp\scene.cpp">
+      <Filter>ソース ファイル\システム系</Filter>
+    </ClCompile>
+    <ClCompile Include="システム系\cpp\score.cpp">
+      <Filter>ソース ファイル\システム系</Filter>
+    </ClCompile>
+    <ClCompile Include="システム系\cpp\Scroll.cpp">
+      <Filter>ソース ファイル\システム系</Filter>
+    </ClCompile>
+    <ClCompile Include="システム系\cpp\sound.cpp">
+      <Filter>ソース ファイル\システム系</Filter>
+    </ClCompile>
+    <ClCompile Include="システム系\cpp\sprite.cpp">
+      <Filter>ソース ファイル\システム系</Filter>
+    </ClCompile>
+    <ClCompile Include="システム系\cpp\stage_choice.cpp">
+      <Filter>ソース ファイル\システム系</Filter>
+    </ClCompile>
+    <ClCompile Include="システム系\cpp\Team_LOGO.cpp">
+      <Filter>ソース ファイル\システム系</Filter>
+    </ClCompile>
+    <ClCompile Include="システム系\cpp\Texture.cpp">
+      <Filter>ソース ファイル\システム系</Filter>
+    </ClCompile>
+    <ClCompile Include="システム系\cpp\timer.cpp">
+      <Filter>ソース ファイル\システム系</Filter>
+    </ClCompile>
+    <ClCompile Include="システム系\cpp\title.cpp">
+      <Filter>ソース ファイル\システム系</Filter>
+    </ClCompile>
+    <ClCompile Include="システム系\cpp\world_choice.cpp">
+      <Filter>ソース ファイル\システム系</Filter>
+    </ClCompile>
+    <ClCompile Include="システム系\cpp\Background.cpp">
+      <Filter>ソース ファイル\システム系</Filter>
+    </ClCompile>
+    <ClCompile Include="システム系\cpp\Clear.cpp">
+      <Filter>ソース ファイル\システム系</Filter>
+    </ClCompile>
+    <ClCompile Include="システム系\cpp\effect.cpp">
+      <Filter>ソース ファイル\システム系</Filter>
+    </ClCompile>
+    <ClCompile Include="システム系\cpp\secret.cpp">
+      <Filter>ソース ファイル\システム系</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="game.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Ball.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ギミック\header\Slowboundwall.h">
+      <Filter>ヘッダー ファイル\ギミック</Filter>
+    </ClInclude>
+    <ClInclude Include="ギミック\header\SlowField.h">
+      <Filter>ヘッダー ファイル\ギミック</Filter>
+    </ClInclude>
+    <ClInclude Include="ギミック\header\SwitchWall.h">
+      <Filter>ヘッダー ファイル\ギミック</Filter>
+    </ClInclude>
+    <ClInclude Include="ギミック\header\WarpBox.h">
+      <Filter>ヘッダー ファイル\ギミック</Filter>
+    </ClInclude>
+    <ClInclude Include="ギミック\header\Wind.h">
+      <Filter>ヘッダー ファイル\ギミック</Filter>
+    </ClInclude>
+    <ClInclude Include="ギミック\header\Bumper.h">
+      <Filter>ヘッダー ファイル\ギミック</Filter>
+    </ClInclude>
+    <ClInclude Include="ギミック\header\Wall.h">
+      <Filter>ヘッダー ファイル\ギミック</Filter>
+    </ClInclude>
+    <ClInclude Include="ギミック\header\BreakableWall.h">
+      <Filter>ヘッダー ファイル\ギミック</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ギミック\header\AccelerationBlock.h">
+      <Filter>ヘッダー ファイル\ギミック</Filter>
+    </ClInclude>
+    <ClInclude Include="エネミー\header\bullet.h">
+      <Filter>ヘッダー ファイル\エネミー</Filter>
+    </ClInclude>
+    <ClInclude Include="エネミー\header\enemy.h">
+      <Filter>ヘッダー ファイル\エネミー</Filter>
+    </ClInclude>
+    <ClInclude Include="ギミック\header\Goal.h">
+      <Filter>ヘッダー ファイル\ギミック</Filter>
+    </ClInclude>
+    <ClInclude Include="シーン\header\TEST_SCENE.h">
+      <Filter>ヘッダー ファイル\シーン</Filter>
+    </ClInclude>
+    <ClInclude Include="シーン\header\SCENE_1_1.h">
+      <Filter>ヘッダー ファイル\シーン\World1</Filter>
+    </ClInclude>
+    <ClInclude Include="シーン\header\SCENE_1_2.h">
+      <Filter>ヘッダー ファイル\シーン\World1</Filter>
+    </ClInclude>
+    <ClInclude Include="シーン\header\SCENE_1_3.h">
+      <Filter>ヘッダー ファイル\シーン\World1</Filter>
+    </ClInclude>
+    <ClInclude Include="シーン\header\SCENE_1_4.h">
+      <Filter>ヘッダー ファイル\シーン\World1</Filter>
+    </ClInclude>
+    <ClInclude Include="シーン\header\SCENE_2_2.h">
+      <Filter>ヘッダー ファイル\シーン\World2</Filter>
+    </ClInclude>
+    <ClInclude Include="シーン\header\SCENE_2_3.h">
+      <Filter>ヘッダー ファイル\シーン\World2</Filter>
+    </ClInclude>
+    <ClInclude Include="シーン\header\SCENE_2_4.h">
+      <Filter>ヘッダー ファイル\シーン\World2</Filter>
+    </ClInclude>
+    <ClInclude Include="シーン\header\SCENE_2_1.h">
+      <Filter>ヘッダー ファイル\シーン\World2</Filter>
+    </ClInclude>
+    <ClInclude Include="シーン\header\SCENE_3_2.h">
+      <Filter>ヘッダー ファイル\シーン\World3</Filter>
+    </ClInclude>
+    <ClInclude Include="シーン\header\SCENE_3_3.h">
+      <Filter>ヘッダー ファイル\シーン\World3</Filter>
+    </ClInclude>
+    <ClInclude Include="シーン\header\SCENE_3_4.h">
+      <Filter>ヘッダー ファイル\シーン\World3</Filter>
+    </ClInclude>
+    <ClInclude Include="シーン\header\SCENE_3_1.h">
+      <Filter>ヘッダー ファイル\シーン\World3</Filter>
+    </ClInclude>
+    <ClInclude Include="システム系\header\Background.h">
+      <Filter>ヘッダー ファイル\システム系</Filter>
+    </ClInclude>
+    <ClInclude Include="システム系\header\Clear.h">
+      <Filter>ヘッダー ファイル\システム系</Filter>
+    </ClInclude>
+    <ClInclude Include="システム系\header\effect.h">
+      <Filter>ヘッダー ファイル\システム系</Filter>
+    </ClInclude>
+    <ClInclude Include="システム系\header\fade.h">
+      <Filter>ヘッダー ファイル\システム系</Filter>
+    </ClInclude>
+    <ClInclude Include="システム系\header\GameOver.h">
+      <Filter>ヘッダー ファイル\システム系</Filter>
+    </ClInclude>
+    <ClInclude Include="システム系\header\input.h">
+      <Filter>ヘッダー ファイル\システム系</Filter>
+    </ClInclude>
+    <ClInclude Include="システム系\header\renderer.h">
+      <Filter>ヘッダー ファイル\システム系</Filter>
+    </ClInclude>
+    <ClInclude Include="システム系\header\result.h">
+      <Filter>ヘッダー ファイル\システム系</Filter>
+    </ClInclude>
+    <ClInclude Include="システム系\header\scene.h">
+      <Filter>ヘッダー ファイル\システム系</Filter>
+    </ClInclude>
+    <ClInclude Include="システム系\header\score.h">
+      <Filter>ヘッダー ファイル\システム系</Filter>
+    </ClInclude>
+    <ClInclude Include="システム系\header\Scroll.h">
+      <Filter>ヘッダー ファイル\システム系</Filter>
+    </ClInclude>
+    <ClInclude Include="システム系\header\sound.h">
+      <Filter>ヘッダー ファイル\システム系</Filter>
+    </ClInclude>
+    <ClInclude Include="システム系\header\sprite.h">
+      <Filter>ヘッダー ファイル\システム系</Filter>
+    </ClInclude>
+    <ClInclude Include="システム系\header\stage_choice.h">
+      <Filter>ヘッダー ファイル\システム系</Filter>
+    </ClInclude>
+    <ClInclude Include="システム系\header\Team_LOGO.h">
+      <Filter>ヘッダー ファイル\システム系</Filter>
+    </ClInclude>
+    <ClInclude Include="システム系\header\Texture.h">
+      <Filter>ヘッダー ファイル\システム系</Filter>
+    </ClInclude>
+    <ClInclude Include="システム系\header\timer.h">
+      <Filter>ヘッダー ファイル\システム系</Filter>
+    </ClInclude>
+    <ClInclude Include="システム系\header\title.h">
+      <Filter>ヘッダー ファイル\システム系</Filter>
+    </ClInclude>
+    <ClInclude Include="システム系\header\world_choice.h">
+      <Filter>ヘッダー ファイル\システム系</Filter>
+    </ClInclude>
+    <ClInclude Include="システム系\header\secret.h">
+      <Filter>ヘッダー ファイル\システム系</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
