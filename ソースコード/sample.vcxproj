@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{6AC03ABA-9A04-421D-8043-CCE42B5FD915}</ProjectGuid>
+    <RootNamespace>sample</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>bounce ball</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;.;.\エネミー\header;.\システム系\header;.\シーン\header;.\ギミック\header</IncludePath>
+    <LibraryPath>xinput.lib;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;.;.\エネミー\header;.\システム系\header;.\シーン\header;.\ギミック\header</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>dinput8.lib;dxguid.lib;xinput.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>dinput8.lib;dxguid.lib;xinput.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Ball.cpp" />
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="エネミー\cpp\bullet.cpp" />
+    <ClCompile Include="エネミー\cpp\enemy.cpp" />
+    <ClCompile Include="ギミック\cpp\AccelerationBlock.cpp" />
+    <ClCompile Include="ギミック\cpp\Bumper.cpp" />
+    <ClCompile Include="ギミック\cpp\BreakableWall.cpp" />
+    <ClCompile Include="ギミック\cpp\Goal.cpp" />
+    <ClCompile Include="ギミック\cpp\Wall.cpp" />
+    <ClCompile Include="ギミック\cpp\Slowboundwall.cpp" />
+    <ClCompile Include="ギミック\cpp\SlowField.cpp" />
+    <ClCompile Include="ギミック\cpp\SwitchWall.cpp" />
+    <ClCompile Include="ギミック\cpp\WarpBox.cpp" />
+    <ClCompile Include="ギミック\cpp\Wind.cpp" />
+    <ClCompile Include="システム系\cpp\Background.cpp" />
+    <ClCompile Include="システム系\cpp\Clear.cpp" />
+    <ClCompile Include="システム系\cpp\effect.cpp" />
+    <ClCompile Include="システム系\cpp\fade.cpp" />
+    <ClCompile Include="システム系\cpp\GameOver.cpp" />
+    <ClCompile Include="システム系\cpp\input.cpp" />
+    <ClCompile Include="システム系\cpp\renderer.cpp" />
+    <ClCompile Include="システム系\cpp\result.cpp" />
+    <ClCompile Include="システム系\cpp\scene.cpp" />
+    <ClCompile Include="システム系\cpp\score.cpp" />
+    <ClCompile Include="システム系\cpp\Scroll.cpp" />
+    <ClCompile Include="システム系\cpp\secret.cpp" />
+    <ClCompile Include="システム系\cpp\sound.cpp" />
+    <ClCompile Include="システム系\cpp\sprite.cpp" />
+    <ClCompile Include="システム系\cpp\stage_choice.cpp" />
+    <ClCompile Include="システム系\cpp\Team_LOGO.cpp" />
+    <ClCompile Include="システム系\cpp\Texture.cpp" />
+    <ClCompile Include="システム系\cpp\timer.cpp" />
+    <ClCompile Include="システム系\cpp\title.cpp" />
+    <ClCompile Include="システム系\cpp\world_choice.cpp" />
+    <ClCompile Include="シーン\cpp\SCENE_1_1.cpp" />
+    <ClCompile Include="シーン\cpp\SCENE_1_2.cpp" />
+    <ClCompile Include="シーン\cpp\SCENE_1_3.cpp" />
+    <ClCompile Include="シーン\cpp\SCENE_1_4.cpp" />
+    <ClCompile Include="シーン\cpp\SCENE_2_1.cpp" />
+    <ClCompile Include="シーン\cpp\SCENE_2_2.cpp" />
+    <ClCompile Include="シーン\cpp\SCENE_2_3.cpp" />
+    <ClCompile Include="シーン\cpp\SCENE_2_4.cpp" />
+    <ClCompile Include="シーン\cpp\SCENE_3_1.cpp" />
+    <ClCompile Include="シーン\cpp\SCENE_3_2.cpp" />
+    <ClCompile Include="シーン\cpp\SCENE_3_3.cpp" />
+    <ClCompile Include="シーン\cpp\SCENE_3_4.cpp" />
+    <ClCompile Include="シーン\cpp\TEST_SCENE.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Ball.h" />
+    <ClInclude Include="game.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="エネミー\header\bullet.h" />
+    <ClInclude Include="エネミー\header\enemy.h" />
+    <ClInclude Include="ギミック\header\AccelerationBlock.h" />
+    <ClInclude Include="ギミック\header\Bumper.h" />
+    <ClInclude Include="ギミック\header\BreakableWall.h" />
+    <ClInclude Include="ギミック\header\Goal.h" />
+    <ClInclude Include="ギミック\header\Wall.h" />
+    <ClInclude Include="ギミック\header\Slowboundwall.h" />
+    <ClInclude Include="ギミック\header\SlowField.h" />
+    <ClInclude Include="ギミック\header\SwitchWall.h" />
+    <ClInclude Include="ギミック\header\WarpBox.h" />
+    <ClInclude Include="ギミック\header\Wind.h" />
+    <ClInclude Include="システム系\header\Background.h" />
+    <ClInclude Include="システム系\header\Clear.h" />
+    <ClInclude Include="システム系\header\effect.h" />
+    <ClInclude Include="システム系\header\fade.h" />
+    <ClInclude Include="システム系\header\GameOver.h" />
+    <ClInclude Include="システム系\header\input.h" />
+    <ClInclude Include="システム系\header\renderer.h" />
+    <ClInclude Include="システム系\header\result.h" />
+    <ClInclude Include="システム系\header\scene.h" />
+    <ClInclude Include="システム系\header\score.h" />
+    <ClInclude Include="システム系\header\Scroll.h" />
+    <ClInclude Include="システム系\header\secret.h" />
+    <ClInclude Include="システム系\header\sound.h" />
+    <ClInclude Include="システム系\header\sprite.h" />
+    <ClInclude Include="システム系\header\stage_choice.h" />
+    <ClInclude Include="システム系\header\Team_LOGO.h" />
+    <ClInclude Include="システム系\header\Texture.h" />
+    <ClInclude Include="システム系\header\timer.h" />
+    <ClInclude Include="システム系\header\title.h" />
+    <ClInclude Include="システム系\header\world_choice.h" />
+    <ClInclude Include="シーン\header\SCENE_1_1.h" />
+    <ClInclude Include="シーン\header\SCENE_1_2.h" />
+    <ClInclude Include="シーン\header\SCENE_1_3.h" />
+    <ClInclude Include="シーン\header\SCENE_1_4.h" />
+    <ClInclude Include="シーン\header\SCENE_2_1.h" />
+    <ClInclude Include="シーン\header\SCENE_2_2.h" />
+    <ClInclude Include="シーン\header\SCENE_2_3.h" />
+    <ClInclude Include="シーン\header\SCENE_2_4.h" />
+    <ClInclude Include="シーン\header\SCENE_3_1.h" />
+    <ClInclude Include="シーン\header\SCENE_3_2.h" />
+    <ClInclude Include="シーン\header\SCENE_3_3.h" />
+    <ClInclude Include="シーン\header\SCENE_3_4.h" />
+    <ClInclude Include="シーン\header\TEST_SCENE.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
